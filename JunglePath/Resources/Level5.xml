@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<level>
+
+  <block x="140" y ="100" type ="start"/>
+  <block x ="240" y ="100" type ="path"/>
+  <block x="340" y ="100" type ="monster"/>
+  <block x ="440" y="100" type="null"/>
+  <block x="540" y="100" type="null"/>
+  <block x="640" y="100" type="null"/>
+  <block x="740" y="100" type="null"/>
+
+  <block x="140" y ="180" type ="monster"/>
+  <block x ="240" y ="180" type ="path"/>
+  <block x="340" y ="180" type ="monster"/>
+  <block x ="440" y="180" type="monster"/>
+  <block x="540" y="180" type="monster"/>
+  <block x="640" y="180" type="monster"/>
+  <block x="740" y="180" type="monster"/>
+
+  <block x="140" y ="260" type ="monster"/>
+  <block x ="240" y ="260" type ="path"/>
+  <block x="340" y ="260" type ="monster"/>
+  <block x ="440" y="260" type="path"/>
+  <block x="540" y="260" type="path"/>
+  <block x="640" y="260" type="path"/>
+  <block x="740" y="260" type="path"/>
+
+  <block x="140" y ="340" type ="path"/>
+  <block x ="240" y ="340" type ="path"/>
+  <block x="340" y ="340" type ="monster"/>
+  <block x ="440" y="340" type="path"/>
+  <block x="540" y="340" type="monster"/>
+  <block x="640" y="340" type="monster"/>
+  <block x="740" y="340" type="path"/>
+
+  <block x="140" y ="420" type ="path"/>
+  <block x ="240" y ="420" type ="monster"/>
+  <block x="340" y ="420" type ="monster"/>
+  <block x ="440" y="420" type="path"/>
+  <block x="540" y="420" type="monster"/>
+  <block x="640" y="420" type="monster"/>
+  <block x="740" y="420" type="path"/>
+
+  <block x="140" y ="500" type ="path"/>
+  <block x ="240" y ="500" type ="path"/>
+  <block x="340" y ="500" type ="path"/>
+  <block x ="440" y="500" type="path"/>
+  <block x="540" y="500" type="monster"/>
+  <block x="640" y="500" type="monster"/>
+  <block x="740" y="500" type="path"/>
+
+  <block x="140" y ="580" type ="monster"/>
+  <block x ="240" y ="580" type ="monster"/>
+  <block x="340" y ="580" type ="monster"/>
+  <block x ="440" y="580" type="monster"/>
+  <block x="540" y="580" type="win"/>
+  <block x="640" y="580" type="path"/>
+  <block x="740" y="580" type="path"/>
+
+</level>
