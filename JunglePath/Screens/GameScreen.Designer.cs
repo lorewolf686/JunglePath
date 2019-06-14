@@ -107,6 +107,8 @@
             this.resume.UseVisualStyleBackColor = false;
             this.resume.Visible = false;
             this.resume.Click += new System.EventHandler(this.Resume_Click);
+            this.resume.Enter += new System.EventHandler(this.Resume_Enter);
+            this.resume.Leave += new System.EventHandler(this.Resume_Leave);
             // 
             // GameScreen
             // 

@@ -22,7 +22,7 @@ namespace JunglePath
         int pX, pY, next;
         int level = 1;
         public static int score;
-        
+
 
         int lives = 5;
         string moveOK;
@@ -150,7 +150,7 @@ namespace JunglePath
         }
 
         void LevelLoad(int levelNum)
-        {            
+        {
             XmlReader reader;
 
             //Chooses the level based on levelNum
@@ -188,7 +188,7 @@ namespace JunglePath
                 {
                     //Reveals start
                     b.revealed = true;
-                    
+
                     //Places player on the start block
                     players[0].x = b.x;
                     players[0].y = b.y;
@@ -246,7 +246,7 @@ namespace JunglePath
                 b.select = false;
             }
 
-            players[0].direction = "right";            
+            players[0].direction = "right";
             findStart();
         }
 
@@ -286,7 +286,7 @@ namespace JunglePath
                 hs.Focus();
                 f.Controls.Remove(this);
             }
-            
+
         }
 
         void rightKey()
@@ -410,7 +410,7 @@ namespace JunglePath
             Refresh();
         }
 
-       
+
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -435,14 +435,14 @@ namespace JunglePath
             quit.BackgroundImage = Properties.Resources.button;
         }
 
-        private void No_Enter(object sender, EventArgs e)
+        private void Resume_Enter(object sender, EventArgs e)
         {
             resume.BackgroundImage = Properties.Resources.selectButton;
         }
 
-        private void No_Leave(object sender, EventArgs e)
+        private void Resume_Leave(object sender, EventArgs e)
         {
-           resume.BackgroundImage = Properties.Resources.button;
+            resume.BackgroundImage = Properties.Resources.button;
         }
 
         #endregion
@@ -453,6 +453,8 @@ namespace JunglePath
             resume.Visible = false;
             quit.Visible = false;
         }
+
+
 
         void downKey()
         {
