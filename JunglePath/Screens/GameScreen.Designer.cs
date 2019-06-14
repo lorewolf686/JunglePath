@@ -31,8 +31,8 @@
             this.lifeLabel = new System.Windows.Forms.Label();
             this.scoreLabel = new System.Windows.Forms.Label();
             this.exitCheck = new System.Windows.Forms.Label();
-            this.no = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.quit = new System.Windows.Forms.Button();
+            this.resume = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lifeLabel
@@ -72,43 +72,41 @@
             this.exitCheck.Text = "Are you sure you want to quit? ";
             this.exitCheck.Visible = false;
             // 
-            // no
+            // quit
             // 
-            this.no.BackColor = System.Drawing.Color.Black;
-            this.no.BackgroundImage = global::JunglePath.Properties.Resources.button;
-            this.no.FlatAppearance.BorderSize = 0;
-            this.no.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.no.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.no.ForeColor = System.Drawing.Color.GreenYellow;
-            this.no.Location = new System.Drawing.Point(653, 305);
-            this.no.Name = "no";
-            this.no.Size = new System.Drawing.Size(150, 80);
-            this.no.TabIndex = 1;
-            this.no.Text = "NO";
-            this.no.UseVisualStyleBackColor = false;
-            this.no.Visible = false;
-            this.no.Click += new System.EventHandler(this.Play_Click);
-            this.no.Enter += new System.EventHandler(this.No_Enter);
-            this.no.Leave += new System.EventHandler(this.No_Leave);
+            this.quit.BackColor = System.Drawing.Color.Black;
+            this.quit.BackgroundImage = global::JunglePath.Properties.Resources.button;
+            this.quit.FlatAppearance.BorderSize = 0;
+            this.quit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.quit.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quit.ForeColor = System.Drawing.Color.GreenYellow;
+            this.quit.Location = new System.Drawing.Point(245, 305);
+            this.quit.Name = "quit";
+            this.quit.Size = new System.Drawing.Size(150, 80);
+            this.quit.TabIndex = 0;
+            this.quit.Text = "YES";
+            this.quit.UseVisualStyleBackColor = false;
+            this.quit.Visible = false;
+            this.quit.Click += new System.EventHandler(this.Button1_Click);
+            this.quit.Enter += new System.EventHandler(this.Button1_Enter);
+            this.quit.Leave += new System.EventHandler(this.Button1_Leave);
             // 
-            // button1
+            // resume
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.BackgroundImage = global::JunglePath.Properties.Resources.button;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.GreenYellow;
-            this.button1.Location = new System.Drawing.Point(245, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 80);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "YES";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            this.button1.Enter += new System.EventHandler(this.Button1_Enter);
-            this.button1.Leave += new System.EventHandler(this.Button1_Leave);
+            this.resume.BackColor = System.Drawing.Color.Black;
+            this.resume.BackgroundImage = global::JunglePath.Properties.Resources.button;
+            this.resume.FlatAppearance.BorderSize = 0;
+            this.resume.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resume.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resume.ForeColor = System.Drawing.Color.GreenYellow;
+            this.resume.Location = new System.Drawing.Point(653, 305);
+            this.resume.Name = "resume";
+            this.resume.Size = new System.Drawing.Size(150, 80);
+            this.resume.TabIndex = 1;
+            this.resume.Text = "NO";
+            this.resume.UseVisualStyleBackColor = false;
+            this.resume.Visible = false;
+            this.resume.Click += new System.EventHandler(this.Resume_Click);
             // 
             // GameScreen
             // 
@@ -116,8 +114,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::JunglePath.Properties.Resources.gameBack;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.no);
+            this.Controls.Add(this.resume);
+            this.Controls.Add(this.quit);
             this.Controls.Add(this.exitCheck);
             this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.lifeLabel);
@@ -137,7 +135,7 @@
         private System.Windows.Forms.Label lifeLabel;
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Label exitCheck;
-        internal System.Windows.Forms.Button no;
-        internal System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.Button quit;
+        internal System.Windows.Forms.Button resume;
     }
 }

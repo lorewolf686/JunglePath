@@ -38,8 +38,8 @@ namespace JunglePath
 
             //Make sure the pause menu is not visible
             exitCheck.Visible = false;
-            no.Visible = false;
-            button1.Visible = false;
+            resume.Visible = false;
+            quit.Visible = false;
         }
         private void GameScreen_Load(object sender, EventArgs e)
         {
@@ -82,9 +82,9 @@ namespace JunglePath
 
                 case Keys.Escape:
                     exitCheck.Visible = true;
-                    no.Visible = true;
-                    button1.Visible = true;
-                    button1.Focus();
+                    resume.Visible = true;
+                    quit.Visible = true;
+                    quit.Focus();
                     break;
             }
         }
@@ -410,21 +410,16 @@ namespace JunglePath
             Refresh();
         }
 
-        private void Play_Click(object sender, EventArgs e)
-        {
-            exitCheck.Visible = false;
-            no.Visible = false;
-            button1.Visible = false;
-        }
+       
 
         private void Button1_Click(object sender, EventArgs e)
         {
             //Change to name screen
             Form f = this.FindForm();
-            NameScreen ns = new NameScreen();
-            f.Controls.Add(ns);
-            ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
-            ns.Focus();
+            MenuScreen ms = new MenuScreen();
+            f.Controls.Add(ms);
+            ms.Location = new Point((f.Width - ms.Width) / 2, (f.Height - ms.Height) / 2);
+            ms.Focus();
             f.Controls.Remove(this);
         }
 
@@ -432,25 +427,32 @@ namespace JunglePath
 
         private void Button1_Enter(object sender, EventArgs e)
         {
-            button1.BackgroundImage = Properties.Resources.selectButton;
+            quit.BackgroundImage = Properties.Resources.selectButton;
         }
 
         private void Button1_Leave(object sender, EventArgs e)
         {
-            button1.BackgroundImage = Properties.Resources.button;
+            quit.BackgroundImage = Properties.Resources.button;
         }
 
         private void No_Enter(object sender, EventArgs e)
         {
-            no.BackgroundImage = Properties.Resources.selectButton;
+            resume.BackgroundImage = Properties.Resources.selectButton;
         }
 
         private void No_Leave(object sender, EventArgs e)
         {
-            no.BackgroundImage = Properties.Resources.button;
+           resume.BackgroundImage = Properties.Resources.button;
         }
 
         #endregion
+
+        private void Resume_Click(object sender, EventArgs e)
+        {
+            exitCheck.Visible = false;
+            resume.Visible = false;
+            quit.Visible = false;
+        }
 
         void downKey()
         {
